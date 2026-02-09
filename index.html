@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>How Well Do You Know Your Ruhu 💖</title>
+
+  <!-- FIXED LINKS (NO FOLDERS) -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- CONFETTI -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+
+<body>
+
+  <!-- Background -->
+  <div class="bg-gradient"></div>
+  <div class="floating-hearts"></div>
+
+  <!-- MUSIC -->
+  <audio id="bgMusic" preload="auto">
+    <source src="music.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- Floating Buttons -->
+  <div class="floating-controls">
+    <button id="musicBtn">🎵</button>
+    <button id="shareBtn">📤</button>
+  </div>
+
+  <!-- APP CARD -->
+  <main class="card" id="app">
+
+    <!-- WELCOME -->
+    <section id="welcome">
+      <h1>How Well Do You Know Your Ruhu 💖</h1>
+      <p class="subtitle">A tiny test made with love by your husband 😌</p>
+      <button class="primary" id="startBtn">Start the Love Test →</button>
+    </section>
+
+    <!-- QUIZ -->
+    <section id="quiz" class="hidden">
+      <div class="progress" id="progress"></div>
+      <h2 id="question"></h2>
+      <div id="options"></div>
+    </section>
+
+    <!-- RESULT -->
+    <section id="result" class="hidden"></section>
+
+  </main>
+
+  <!-- FIXED SCRIPT LINK -->
+  <script src="app.js"></script>
+</body>
+</html>
